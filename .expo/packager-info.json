@@ -1,0 +1,10 @@
+{
+  "expoServerPort": 19000,
+  "expoServerNgrokUrl": "https://h3-tvw.asadrana911.rn-starter.exp.direct",
+  "packagerNgrokUrl": "https://packager.h3-tvw.asadrana911.rn-starter.exp.direct",
+  "ngrokPid": 1764,
+  "packagerPort": 19001,
+  "packagerPid": 1304,
+  "devToolsPort": 19002,
+  "webpackServerPort": null
+}
