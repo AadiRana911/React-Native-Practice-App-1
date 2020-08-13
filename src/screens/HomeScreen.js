@@ -1,23 +1,43 @@
 import React from "react";
-import { TouchableOpacity,View } from "react-native"
-import { Text, StyleSheet, Button } from "react-native";
+import { TouchableOpacity, View, Text, StyleSheet } from "react-native";
+import HomeScreenManager from "../components/HomeScreenManager";
 
-
-const HomeScreen = props => {
+const HomeScreen = ({navigation}) => {
   return (
-    <View style={{flex:1}}>
-      <Text style={styles.text}>Hi</Text>
+    <View style={{flex:1, marginTop: 10, marginLeft: 10}}>
       <TouchableOpacity
-        style = {styles.touchableOpacityStyle} activeOpacity = {0.8}
-        onPress = {() => props.navigation.navigate('Component')}
+        style = {styles.touchableOpacityStyle} activeOpacity = {0.7}
+        onPress = {() => navigation.navigate('Component')}
       >
         <Text style={styles.touchableOpacityTextStyle}>Go to components demo</Text>
       </TouchableOpacity>
+
       <TouchableOpacity
-        style = {styles.touchableOpacityStyle} activeOpacity = {0.8}
-        onPress = {() => props.navigation.navigate('List')}
+        style = {styles.touchableOpacityStyle} activeOpacity = {0.7}
+        onPress = {() => navigation.navigate('List')}
       >
         <Text style={styles.touchableOpacityTextStyle}>Go to list demo</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style = {styles.touchableOpacityStyle} activeOpacity = {0.7}
+        onPress = {() => navigation.navigate('Image')}
+      >
+        <Text style={styles.touchableOpacityTextStyle}>Go to image demo</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style = {styles.touchableOpacityStyle} activeOpacity = {0.7}
+        onPress = {() => navigation.navigate('Counter')}
+      >
+        <Text style={styles.touchableOpacityTextStyle}>Go to Counter demo</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style = {styles.touchableOpacityStyle} activeOpacity = {0.7}
+        onPress = {() => navigation.navigate('Color')}
+      >
+        <Text style={styles.touchableOpacityTextStyle}>Go to Colors demo</Text>
       </TouchableOpacity>
     </View>
   );
@@ -33,7 +53,7 @@ const styles = StyleSheet.create({
     width:'90%',
     borderRadius: 30,
     alignSelf: 'center',
-    marginBottom: 10
+    marginBottom: 15
   },
   touchableOpacityTextStyle: {
     fontSize: 25,
