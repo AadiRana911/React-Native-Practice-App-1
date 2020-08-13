@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { View, TouchableOpacity, StyleSheet, Text } from 'react-native';
+import { View, TouchableOpacity, StyleSheet, Text, FlatList } from 'react-native';
 
 const SquareScreen = () => {
     const [colors, setColors] = useState([]);
@@ -9,7 +9,15 @@ const SquareScreen = () => {
             <TouchableOpacity style = {styles.touchableOpacityStyle} activeOpacity = {0.7} onPress = {() => {setColors([...colors, randomRGB()]);}}>
                 <Text style={styles.touchableOpacityTextStyle}>Add a color</Text>
             </TouchableOpacity>
-            <View style = { { height: 100, width: 100, backgroundColor: randomRGB() } }></View>
+            <FlatList 
+                keyExtractor = {item => item}
+                data = {colors}
+                renderItem = { ({ item }) => {
+                    return (
+                        <View style = { { height: 100, width: 100, marginBottom: 5, backgroundColor: item } }></View>
+                    );
+                }}
+            />
         </View>
     );
 }

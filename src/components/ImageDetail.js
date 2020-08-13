@@ -12,7 +12,7 @@ const ImageDetail = ({ source, title, score }) => {
 }
 
 const styles = StyleSheet.create({
-
+    
 });
 
 export default ImageDetail;
