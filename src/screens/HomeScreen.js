@@ -1,6 +1,5 @@
 import React from "react";
 import { TouchableOpacity, View, Text, StyleSheet } from "react-native";
-import HomeScreenManager from "../components/HomeScreenManager";
 
 const HomeScreen = ({navigation}) => {
   return (
@@ -46,6 +45,13 @@ const HomeScreen = ({navigation}) => {
       >
         <Text style={styles.touchableOpacityTextStyle}>Go to Square demo</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity
+        style = {styles.touchableOpacityStyle} activeOpacity = {0.7}
+        onPress = {() => navigation.navigate('Text')}
+      >
+        <Text style={styles.touchableOpacityTextStyle}>Go to Text Input demo</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -55,12 +61,12 @@ const styles = StyleSheet.create({
     fontSize: 30,
   },
   touchableOpacityStyle: {
-    backgroundColor: '#660000',
-    padding:10,
+    backgroundColor: '#ff00ff',
+    padding:5,
     width:'90%',
     borderRadius: 30,
     alignSelf: 'center',
-    marginBottom: 15
+    marginBottom: 10
   },
   touchableOpacityTextStyle: {
     fontSize: 25,

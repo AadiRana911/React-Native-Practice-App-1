@@ -1,10 +1,10 @@
 {
   "expoServerPort": 19000,
-  "expoServerNgrokUrl": "https://59-we5.asadrana911.rn-starter.exp.direct",
-  "packagerNgrokUrl": "https://packager.59-we5.asadrana911.rn-starter.exp.direct",
-  "ngrokPid": 14048,
+  "expoServerNgrokUrl": "https://u8-2v4.asadrana911.rn-starter.exp.direct",
+  "packagerNgrokUrl": "https://packager.u8-2v4.asadrana911.rn-starter.exp.direct",
+  "ngrokPid": 10232,
   "packagerPort": 19001,
-  "packagerPid": 11996,
+  "packagerPid": 16748,
   "devToolsPort": 19002,
   "webpackServerPort": null
 }
